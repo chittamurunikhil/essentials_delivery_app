@@ -16,7 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from orderSelection import views
+
 
 urlpatterns = [
     path('admin/' , admin.site.urls),
+    path('addprod/' , views.addProduct),
+    path('removeprod/' , views.removeProduct),
+    path('deleteprod/' , views.deleteProduct),
+    path('addwishprod/' , views.addWishlistProduct),
+    path('totalcartvalue/' , views.totalCartValue),
 ]
