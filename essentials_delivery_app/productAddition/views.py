@@ -15,25 +15,25 @@ def productName(request):
 
 # add productid
 def productId(request):
-    return HttpResponse("This is productid view")
+    return HttpResponse("This is product id view")
 
 # add producttype
 def productType(request):
-    return HttpResponse("This is producttype view")
+    return HttpResponse("This is product type view")
 
 
 # add productquantity
 def productQuantity(request):
-    return HttpResponse("This is productquantity view")
+    return HttpResponse("This is product quantity view")
 
 # add productquality
 def productQuality(request):
-    return HttpResponse("This is productquality view")
+    return HttpResponse("This is product quality view")
 
 # add productprice
 def productPrice(request):
-    return HttpResponse("This is productprice view")
+    return HttpResponse("This is product price view")
 
 # add productimage
 def productImage(request):
-    return HttpResponse("This is productimage view")
+    return HttpResponse("This is product image view")
