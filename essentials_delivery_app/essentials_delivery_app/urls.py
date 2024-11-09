@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from orderSelection import views
+from productAddition.views import *
 
 
 urlpatterns = [
@@ -26,4 +27,13 @@ urlpatterns = [
     path('deleteprod/' , views.deleteProduct),
     path('addwishprod/' , views.addWishlistProduct),
     path('totalcartvalue/' , views.totalCartValue),
+
+
+    path('addprodname/' , productName),
+    path('addprodid/' , productId),
+    path('addprodtype/' , productType),
+    path('addprodqnty/' , productQuantity),
+    path('addprodqlty/' , productQuality),
+    path('addprodprice/' , productPrice),
+    path('addprodimg/' , productImage),
 ]

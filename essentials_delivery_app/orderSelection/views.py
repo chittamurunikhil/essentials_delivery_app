@@ -11,7 +11,7 @@ from django.http import HttpResponse
 
 # add product
 def addProduct(request):
-    return HttpResponse("This is addproduct view")
+    return HttpResponse("<h1>This is addproduct view<h1><h2>add your products here<h2>")
 
 # remove product
 def removeProduct(request):
