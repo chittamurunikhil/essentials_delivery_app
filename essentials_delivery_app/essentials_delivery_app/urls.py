@@ -16,24 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from orderSelection import views
-from productAddition.views import *
+from django.conf.urls import include
 
 
 urlpatterns = [
     path('admin/' , admin.site.urls),
-    path('addprod/' , views.addProduct),
-    path('removeprod/' , views.removeProduct),
-    path('deleteprod/' , views.deleteProduct),
-    path('addwishprod/' , views.addWishlistProduct),
-    path('totalcartvalue/' , views.totalCartValue),
-
-
-    path('addprodname/' , productName),
-    path('addprodid/' , productId),
-    path('addprodtype/' , productType),
-    path('addprodqnty/' , productQuantity),
-    path('addprodqlty/' , productQuality),
-    path('addprodprice/' , productPrice),
-    path('addprodimg/' , productImage),
+    path('ordsel/' , include('orderSelection.urls')),
+    path('prodadd/' , include('productAddition.urls')),
+    
 ]
